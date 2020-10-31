@@ -1,0 +1,13 @@
+{
+	"trailingComma": "es5",
+	"tabWidth": 2,
+	"arrowParens": "always",
+	"bracketSpacing": true,
+	"endOfLine": "lf",
+	"printWidth": 80,
+	"singleQuote": false,
+	"svelteSortOrder": "scripts-styles-markup",
+	"svelteStrictMode": true,
+	"svelteBracketNewLine": false,
+	"svelteAllowShorthand": false
+}

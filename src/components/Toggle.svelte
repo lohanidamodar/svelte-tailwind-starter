@@ -1,5 +1,6 @@
 <script>
   export let value;
+  export let label = "";
 </script>
 
 <style>
@@ -11,7 +12,6 @@
 
   input:checked ~ .toggle__dot {
     transform: translateX(100%);
-    background-color: #48bb78;
   }
 </style>
 
@@ -29,16 +29,14 @@
         class="hidden" />
       <!-- line -->
       <div
-        class="toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
+        class=" toggle__line w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
       <!-- dot -->
       <div
-        class="toggle__dot absolute w-6 h-6 bg-white rounded-full shadow
+        class="{value ? 'bg-pink-500':''} toggle__dot absolute w-6 h-6 bg-white rounded-full shadow
         inset-y-0 left-0"></div>
     </div>
     <!-- label -->
-    <div class="ml-3 dark:text-gray-200 text-gray-700 font-medium">
-      Toggle Me!
-    </div>
+    <div class="ml-3 dark:text-gray-200 text-gray-700 font-medium">{label}</div>
   </label>
 
 </div>

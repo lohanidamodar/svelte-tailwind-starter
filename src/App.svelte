@@ -20,7 +20,7 @@
           Star Github
         </a>
       </div>
-      <Toggle bind:value="{darkMode}" />
+      <Toggle label="Dark Mode" bind:value="{darkMode}" />
     </div>
   </div>
 </main>

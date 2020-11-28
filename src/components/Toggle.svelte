@@ -3,7 +3,11 @@
   export let label = "";
 </script>
 
-<style>
+<style lang="postcss">
+  label {
+    @apply flex items-center cursor-pointer;
+  }
+
   .toggle__dot {
     top: -0.25rem;
     left: -0.25rem;
@@ -18,7 +22,7 @@
 <div class="flex items-center justify-center w-full mb-24">
 
   <!-- Toggle Button -->
-  <label for="toogleA" class="flex items-center cursor-pointer">
+  <label for="toogleA" class="">
     <!-- toggle -->
     <div class="relative">
       <!-- input -->
